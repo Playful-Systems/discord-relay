@@ -32,7 +32,7 @@ client.on("messageCreate", async (message) => {
     content: message.content,
   }
 
-  console.log(body)
+  // console.log(body)
 
   const response = await fetch(env.ENDPOINT, {
     method: "POST",
