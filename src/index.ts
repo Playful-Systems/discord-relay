@@ -46,6 +46,8 @@ client.on("messageCreate", async (message) => {
   if (response.status !== 200) {
     console.error("response status was not 200")
   }
+
+  console.info(`message ${message.id} sent on channel ${message.channelId}`)
 })
 
 client.on('error', console.error);
